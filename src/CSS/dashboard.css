@@ -1,0 +1,63 @@
+/* Responsive styles for Dashboard component */
+
+/* Common styles for all screen sizes */
+.dashboard-container {
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto; /* Center the container horizontally */
+  font-family: Arial, sans-serif;
+}
+
+/* Smartphone */
+@media (max-width: 767px) {
+  .chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chart-container .chart-wrapper {
+    margin: 10px 0;
+    width: 100%;
+  }
+  .list-wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 100px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .chart-container .chart-wrapper {
+    margin: 15px;
+    width: calc(50% - 30px);
+  }
+  .list-wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 100px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .chart-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the charts horizontally */
+  }
+
+  .chart-container .chart-wrapper {
+    margin: 20px;
+    max-width: calc(50% - 40px); /* Two charts per row with some margin between */
+    margin-bottom: 50px;
+  }
+
+  .chart-container .list-wrapper {
+    margin: 20px;
+    max-width: 600px; /* Set maximum width for the list container */
+  
+  }
+
+}
