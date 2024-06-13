@@ -12,7 +12,9 @@ body {
   font-family: var(--primaryfont);
   background: var(--white);
 }
-
+.home {
+  min-height: 300px;
+}
 .hero {
   background-image: url(../pictures/hero.jpg);
   height: 450px;
